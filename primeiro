@@ -92,3 +92,15 @@ while jogando:
         
         elif categoria == "AC" or categoria == "ac":
             print("Voce apostou em 'Any Craps'")
+	    v = randint(1,6) + randint(1,6)
+            print("Os dados sorteados somaram em: {0}".format(v))
+            if v == 2 or v == 3 or v == 12:
+                dinheiro = dinheiro+(aposta*7)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+            
+            else:
+                dinheiro = dinheiro-aposta
+                print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
+                
+                
