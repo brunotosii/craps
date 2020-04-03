@@ -19,6 +19,8 @@ FIELD – Esta aposta pode ser feita em qualquer fase do jogo.
 _
 
 ANY CRAPS – Esta aposta pode ser feita em qualquer fase do jogo. 
+
+=======
 	Nesta aposta se os dados derem 2, 3 ou 12 o jogador ganha sete vezes o que apostou, senão perde a aposta.
 ___
 
@@ -29,3 +31,4 @@ TWELVE – Esta aposta pode ser feita em qualquer fase do jogo.
 while jogando:
     
     aposta = int(input("Digite um valor para sua aposta, ou '0' se não quiser mais jogar: "))
+
