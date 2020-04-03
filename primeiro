@@ -81,3 +81,14 @@ while jogando:
             
             elif v == 12:
                 dinheiro = dinheiro+(aposta*4)
+		                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+            
+            else:
+                dinheiro = dinheiro+(aposta*2)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+                
+        
+        elif categoria == "AC" or categoria == "ac":
+            print("Voce apostou em 'Any Craps'")
