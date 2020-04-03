@@ -71,3 +71,13 @@ while jogando:
             
             if v == 5 or v == 6 or v == 7 or v == 8:
                 dinheiro = dinheiro-aposta
+		print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
+                
+                
+            elif v == 2:
+                dinheiro = dinheiro+(aposta*3)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+            
+            elif v == 12:
+                dinheiro = dinheiro+(aposta*4)
