@@ -40,5 +40,15 @@ while jogando:
             if v == 7 or v == 11:
                 dinheiro = dinheiro+(aposta*2)
                 print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                           elif v == 2 or v == 3 or v == 12:
+                dinheiro = dinheiro-aposta
+                print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
                 
+                
+            else:
+                print("O jogo mudou agora para a fase de 'Point'")
+                v2 = randint(1,6) + randint(1,6)
+                
+                while v2 != v or v2 != 7:
+                    v2 = randint(1,6) + randint(1,6)
 
