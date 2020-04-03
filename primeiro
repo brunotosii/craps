@@ -1,0 +1,10 @@
+from random import randint
+jogando = True
+dinheiro = 100
+print("""
+
+    Seja bem-vindo ao Craps, um jogo de dados muito popular em cassinos. 
+Para você que ainda não conhece o jogo, aqui estão as regras.
+O jogo é composto de rodadas sucessivas, onde em cada rodada o jogador deve decidir entre apostar ou sair do jogo, ou, caso as fichas acabem, sairá também. 
+As apostas funcionam da seguinte forma, o jogador decide qual será o seu palpite sobre a soma dos valores dos dados e logo em seguida decide quanto ira apostar. 
+As Opções de Apostas:
