@@ -114,4 +114,8 @@ while jogando:
             else:
                 dinheiro = dinheiro-aposta
                 print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
+		        
+                
+        else:
+            print("Categoria invalida, tente novamente")
                 
