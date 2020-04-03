@@ -60,4 +60,14 @@ while jogando:
                         break
                     elif v2 == 7:
                         dinheiro = dinheiro-aposta
-
+                       print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
+                        break
+                    
+                    
+        elif categoria == "F" or categoria == "f":
+            print("Voce apostou em 'Field'")
+            v = randint(1,6) + randint(1,6)
+            print("Os dados sorteados somaram em: {0}".format(v))
+            
+            if v == 5 or v == 6 or v == 7 or v == 8:
+                dinheiro = dinheiro-aposta
