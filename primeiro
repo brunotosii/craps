@@ -71,3 +71,61 @@ while jogando:
                         dinheiro = dinheiro-aposta
                         print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
                         break
+                    
+                    
+        elif categoria == "F" or categoria == "f":
+            print("Voce apostou em 'Field'")
+            v = randint(1,6) + randint(1,6)
+            print("Os dados sorteados somaram em: {0}".format(v))
+            
+            if v == 5 or v == 6 or v == 7 or v == 8:
+                dinheiro = dinheiro-aposta
+                print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
+                
+                
+            elif v == 2:
+                dinheiro = dinheiro+(aposta*3)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+            
+            elif v == 12:
+                dinheiro = dinheiro+(aposta*4)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+            
+            else:
+                dinheiro = dinheiro+(aposta*2)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+                
+        
+        elif categoria == "AC" or categoria == "ac":
+            print("Voce apostou em 'Any Craps'")
+            v = randint(1,6) + randint(1,6)
+            print("Os dados sorteados somaram em: {0}".format(v))
+            if v == 2 or v == 3 or v == 12:
+                dinheiro = dinheiro+(aposta*7)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+            
+            else:
+                dinheiro = dinheiro-aposta
+                print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
+                
+                
+        elif categoria == "T" or categoria == "t":
+            print("Voce apostou em 'Twelve'")
+            v = randint(1,6) + randint(1,6)
+            print("Os dados sorteados somaram em: {0}".format(v))
+            if v == 12:
+                dinheiro = dinheiro+(aposta*30)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                
+            
+            else:
+                dinheiro = dinheiro-aposta
+                print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
+                
+                
+        else:
+            print("Categoria invalida, tente novamente")
