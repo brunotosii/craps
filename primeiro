@@ -102,5 +102,16 @@ while jogando:
             else:
                 dinheiro = dinheiro-aposta
                 print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
+                elif categoria == "T" or categoria == "t":
+            print("Voce apostou em 'Twelve'")
+            v = randint(1,6) + randint(1,6)
+            print("Os dados sorteados somaram em: {0}".format(v))
+            if v == 12:
+                dinheiro = dinheiro+(aposta*30)
+                print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
                 
+            
+            else:
+                dinheiro = dinheiro-aposta
+                print("Você perdeu, seu dinheiro agora é {0:.2f}".format(dinheiro))
                 
