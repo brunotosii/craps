@@ -51,4 +51,13 @@ while jogando:
                 
                 while v2 != v or v2 != 7:
                     v2 = randint(1,6) + randint(1,6)
+		                        print("Os dados sorteados em points somaram em: {0}".format(v2))
+                    print("E o valor armazenado como points é {0}".format(v))
+            
+                    if v2 == v:
+                        dinheiro = dinheiro+(aposta*2)
+                        print("Você ganhou, seu dinheiro agora é {0:.2f}, parabéns!".format(dinheiro))
+                        break
+                    elif v2 == 7:
+                        dinheiro = dinheiro-aposta
 
